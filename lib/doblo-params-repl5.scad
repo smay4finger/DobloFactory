@@ -80,7 +80,7 @@ function NBO(SCALE)        = PART_WIDTH(SCALE);                   // nibble bott
 function NH(SCALE)         = (SCALE < 0.6) ? 1.75 * LEGO_SCALE(SCALE) : 4.55 * SCALE;  // LEGO vs. DUPLO
 
 
-function NB_RADIUS(SCALE)  = (SCALE < 0.6) ? (4.7 / 2 * LEGO_SCALE(SCALE)) : (9.45 / 2.0 * SCALE);    // radius Lego vs. DUPLO //was 9.5
+function NB_RADIUS(SCALE)  = (SCALE < 0.6) ? (4.7 / 2 * LEGO_SCALE(SCALE)) : (9.5 / 2.0 * SCALE);    // radius Lego vs. DUPLO
 // Real DUPLO Block = 9.38 `
 
 function NB_RADIUS_INSIDE(SCALE) = 7.0/2  * SCALE;
@@ -94,7 +94,7 @@ function CROSS_LEN(SCALE)  = (PART_WIDTH(SCALE)-NB_RADIUS(SCALE)/2);
 
 // Bottom nibbles size definitions
 // Must be adjusted with respect to layer resolution and other slicing considerations
-function NB_BOTTOM_RADIUS(SCALE)        = (SCALE < 0.6) ? 6.6/2*LEGO_SCALE(SCALE) : 13.3/2*SCALE; //was 13.4(3)(2)  //13.15
+function NB_BOTTOM_RADIUS(SCALE)        = (SCALE < 0.6) ? 6.6/2*LEGO_SCALE(SCALE) : 13.15/2*SCALE; //was 13.4(3)(2)
 function NB_BOTTOM_RADIUS_THIN(SCALE)        = (SCALE < 0.6) ? 3.2/2*LEGO_SCALE(SCALE) : 7.0/2*SCALE;
 // Real DUPLO = 13.48
 function NB_BOTTOM_RADIUS_INSIDE(SCALE) = (SCALE < 0.6) ? 4.8/2*LEGO_SCALE(SCALE) : 10.9/2*SCALE; //was 10.8
@@ -108,7 +108,7 @@ function DOBLOWALL(SCALE) = (SCALE < 0.6) ? 1.1 * LEGO_SCALE(SCALE): 1.6 *SCALE;
 
 function USE_INSET(SCALE) = true;//(SCALE < 0.6) ? false : true;
 function INSET_WIDTH(SCALE)    = (SCALE < 0.6) ? 0.6 *LEGO_SCALE(SCALE) : 1.52 * SCALE; //little inset walls to make it stick
-function INSET_LENGTH(SCALE)  = (SCALE < 0.6) ? 3*DOBLOWALL(SCALE) : 3.8*DOBLOWALL(SCALE); // Legos have proportionally smaller insets //was 4
+function INSET_LENGTH(SCALE)  = (SCALE < 0.6) ? 3*DOBLOWALL(SCALE) : 4*DOBLOWALL(SCALE); // Legos have proportionally smaller insets
 
 //lattice width and height (optional, see LATTICE_TYPE)
 // A grid underneath the flat bridge, crossing through the nibbles underneath

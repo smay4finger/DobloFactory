@@ -1,6 +1,7 @@
 /* Castle kit, Lego and duplo compatible
 Daniel.schneider@unige.ch
 sept./dec. 2012
+verified sept 2015.
 
 Version 1.9
 - modified into an extension to doblo-factory v2.0 by:
@@ -570,11 +571,11 @@ module wizard_tower_structure (z_corr)
 	house_lr   (-5.5, -1.5,   THIRD,  10,    3,    5*FULL, scale=SCALE) ;
 	# house_fb   (-1.5, -2,   THIRD,  3,     4,    5*FULL , scale=SCALE); // inside
 	// bottom window
-	house_fb   (-0.5, -5.75,  2*FULL+z_corr,  1,    10,   3*FULL, scale=SCALE) ;
+	# house_fb   (-0.5, -5.75,  2*FULL+z_corr,  1,    10,   3*FULL, scale=SCALE) ;
 	// 2nd floor
 	house_lr   (-5.5, -1.5,   FLOOR_TOP+z_corr,  10,   3,    5*FULL, scale=SCALE) ;
 	house_fb   (-0.5, -5.75,  8*FULL+z_corr,  1,    10,   3*FULL, scale=SCALE) ;
-	# house_fb   (-1.5, -2,   FLOOR_TOP+z_corr,  3,     4,    5*FULL , scale=SCALE); // inside
+	house_fb   (-1.5, -2,   FLOOR_TOP+z_corr,  3,     4,    5*FULL , scale=SCALE); // inside
 	// top
 	cyl_block (-2.25, -2.25,   14*FULL+z_corr,  4.5,    4.5,   24,   false, scale=SCALE) ;
 	house_lr   (-5.5, -0.75,  14*FULL+z_corr,  10,    1.5,    15, scale=SCALE) ;

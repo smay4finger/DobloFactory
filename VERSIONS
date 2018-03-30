@@ -7,6 +7,10 @@ todo:
 - Use MCAD for support of gears and other mechanical elements?
 - More UniversalConnectorKit-like aspects?
 
+Version 2.2 - jan 2017
+- smaller adjustments
+- Stared doing something about Nano size, e.g. replaced underneath nibbles for Nano with lines
+
 Version 2.1 - jan 2013
 - includes stls for test-import.scad to make duplo pieces, with attribution
 - change authorship order
